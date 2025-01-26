@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function addTask () {
         const userInput = document.getElementById("task-input");
-        const taskFText = userInput.value;
-        const taskText = taskFText.trim;
+        const taskText = userInput.value.trim();
 
         if(taskText === "") {
             alert("Please Enter a task");
